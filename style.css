@@ -1,0 +1,170 @@
+body {
+	background-color: #55b9f3;
+}
+
+#numbers {
+	position:fixed;
+	user-select: none;
+	border-radius: 0px;
+	background: #55b9f3;
+	box-shadow:  8px 8px 24px #489dcf, -8px -8px 24px #62d5ff;
+}
+
+.shuffle {
+  background-color: #4CAF50;
+  color: black;
+  border: 2px solid #4CAF50;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: 5px 5px 5px #333;
+  transition-duration: 0.4s;
+}
+
+.button {
+  background-color:#55b9f3;
+  border: none;
+  border-radius: 0px;
+  box-shadow:  8px 8px 24px #489dcf,  -8px -8px 24px #62d5ff;
+  color: white;
+  font-weight: 700;
+  height: 96px;
+  margin-bottom: 48px;
+  margin-right: 48px;
+  overflow: hidden;
+  position: relative;
+  text-transform: uppercase;
+  width: 96px;   
+}
+
+.button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  opacity: 0;
+  transform: translateX(-100%);  
+  background: rgba(255, 255, 255, 0.13);
+
+}
+
+.button:hover:after {
+  opacity: 1;
+  top: 0;
+  left: 0;
+  transform: translateX(0);
+  transition-property: transform, opacity;
+  transition-duration: 0.7s, 0.15s;
+  transition-timing-function: ease;
+}
+
+.button:active:after {
+  opacity: 0;
+}
+
+.square {
+	position: fixed;
+	width: 87px;
+	height: 87px;
+	text-align: center;
+	font-size: 64px;
+	font-family: 'BebasNeueRegular';
+	margin-left:50vh;
+    margin-top: 25vh;
+	color: white;
+	opacity: 0.8;
+	border-radius: 0px;
+	background: #55b9f3;
+	box-shadow:  8px 8px 24px #489dcf, -8px -8px 24px #62d5ff;
+}
+
+.square:hover {
+	 background: rgba(255, 255, 255, 0.13);
+ 
+	opacity: 0.5;
+	animation-name: example;
+	transform: rotateX(10deg);
+	animation-duration: 2s;
+}
+
+
+@font-face {
+	font-family: 'BebasNeueRegular';
+	src: url('BebasNeueRegular.otf');
+}
+
+
+#shufflebtn{
+	margin-top: 70px;
+	position: absolute;
+	left: 50%;
+}
+
+#blank {
+	left: 280px;
+	top:  280px;
+}
+#one {
+	top: 16px;
+	left: 16px;
+}
+#two {
+	top: 16px;
+	left: 104px;
+}
+#three {
+	top: 16px;
+	left: 192px;
+}
+#four {
+   	top: 16px;
+	left: 280px;
+}
+#five {
+	left: 16px;
+	top: 104px;
+}
+#six {
+    left: 104px;
+	top: 104px;
+}
+#seven {
+	top: 104px;
+	left: 192px;
+}
+#eight {
+	left: 280px;
+	top: 104px;
+}
+#nine {
+	left: 16px;
+	top: 192px;
+}
+#ten {
+	left: 104px;
+	top: 192px;
+}
+#eleven {
+	left: 192px;
+	top: 192px;
+}
+#twelve {
+	left: 280px;
+	top: 192px;
+}
+#thirteen {
+	left: 16px;
+	top: 280px;
+}
+#fourteen {
+	left: 104px;
+	top: 280px;
+}
+#fifteen {
+	left: 192px;
+	top: 280px;
+}
